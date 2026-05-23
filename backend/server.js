@@ -7,12 +7,14 @@ dotenv.config();
 
 const app = express();
 
+
+
 app.use(cors());
 app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
 const URI = process.env.MONGO_URI;
-// console.log(URI)
+console.log(URI)
 const start = async () => {
   try {
     console.log("Connecting to MongoDB...");
